@@ -81,7 +81,7 @@
     [movieCell.movieImage setImageWithURL:posterURL];
 
     return movieCell;
-    
+
 }
 
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
