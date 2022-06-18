@@ -21,8 +21,6 @@
 
 @end
 
-//NSArray *data;
-
 @implementation MovieViewController
 
 - (void)viewDidLoad {
@@ -42,7 +40,6 @@
 }
 
 - (void) fetchMovies{
-    // Do any additional setup after loading the view.
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=e2223325a99d5298b9d6d2d2de395337"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
@@ -65,7 +62,6 @@
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                NSLog(@"%@", dataDictionary);
                
-               // TODO: Get the array of movies
                self.movieArray = dataDictionary[@"results"];
                
                for (NSDictionary *movieArray in self.movieArray){
@@ -87,7 +83,6 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     NSIndexPath *index = self.tableView.indexPathForSelectedRow;

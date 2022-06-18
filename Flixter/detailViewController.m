@@ -19,9 +19,7 @@
 @implementation detailViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+    [super viewDidLoad];    
     self.movieTitle.text = self.detailDict[@"title"];
     
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
