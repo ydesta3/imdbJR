@@ -1,5 +1,5 @@
 //
-//  MovieDetailsViewController.h
+//  detailViewController.h
 //  Flixter
 //
 //  Created by Yonatan Desta on 6/17/22.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MovieDetailsViewController : UIViewController
+@interface detailViewController : UIViewController
 
 @property (nonatomic, strong) NSDictionary *detailDict;
 

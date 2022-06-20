@@ -1,32 +1,32 @@
 //
-//  MovieDetailsViewController.m
+//  detailViewController.m
 //  Flixter
 //
 //  Created by Yonatan Desta on 6/17/22.
 //
 
-#import "MovieDetailsViewController.h"
+#import "detailViewController.h"
 #import "UIImageview+AFNetworking.h"
 
 
-@interface MovieDetailsViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@interface detailViewController () 
+@property (weak, nonatomic) IBOutlet UIImageView *movieImage;
 @property (weak, nonatomic) IBOutlet UILabel *movieDescription;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *movieTitle;
 
 @end
 
-@implementation MovieDetailsViewController
+@implementation detailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];    
-    self.titleLabel.text = self.detailDict[@"title"];
+    self.movieTitle.text = self.detailDict[@"title"];
     
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = self.detailDict[@"poster_path"];
     NSString *completePosterURLString = [baseURLString stringByAppendingString:posterURLString];
     NSURL *posterURL = [NSURL URLWithString:completePosterURLString];
-    [self.imageView setImageWithURL:posterURL];
+    [self.movieImage setImageWithURL:posterURL];
     
     self.movieDescription.text = self.detailDict[@"overview"];
     
