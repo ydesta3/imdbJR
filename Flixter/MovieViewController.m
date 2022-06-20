@@ -8,7 +8,7 @@
 #import "MovieViewController.h"
 #import "singleMovieCell.h"
 #import "UIImageview+AFNetworking.h"
-#import "detailViewController.h"
+#import "MovieDetailsViewController.h"
 
 
 
@@ -45,7 +45,7 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
            if (error != nil) {
-               NSLog(@"%@", [error localizedDescription]);
+               NSLog(@" :YD: %@", [error localizedDescription]);
                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Cannot Get Movies"
                                               message:@"The Internet connection seems to be offline."
                                               preferredStyle:UIAlertControllerStyleAlert];
@@ -60,7 +60,7 @@
                [self.activityIndicator stopAnimating];
 
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-               NSLog(@"%@", dataDictionary);
+               NSLog(@" :YD: %@", dataDictionary);
                
                self.movieArray = dataDictionary[@"results"];
                
@@ -90,7 +90,7 @@
     NSDictionary *dataToPass = self.movieArray[index.row];
 
     // Get the new view controller using [segue destinationViewController].
-    detailViewController *detailVC = [segue destinationViewController];
+    MovieDetailsViewController *detailVC = [segue destinationViewController];
 
     // Pass the selected object to the new view controller.
     detailVC.detailDict = dataToPass;

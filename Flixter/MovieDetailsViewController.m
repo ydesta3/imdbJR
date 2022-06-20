@@ -5,30 +5,30 @@
 //  Created by Yonatan Desta on 6/17/22.
 //
 
-#import "detailViewController.h"
+#import "MovieDetailsViewController.h"
 #import "UIImageview+AFNetworking.h"
 
 
-@interface detailViewController () 
-@property (weak, nonatomic) IBOutlet UIImageView *movieImage;
-@property (weak, nonatomic) IBOutlet UILabel *movieDescription;
-@property (weak, nonatomic) IBOutlet UILabel *movieTitle;
+@interface MovieDetailsViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
-@implementation detailViewController
+@implementation MovieDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];    
-    self.movieTitle.text = self.detailDict[@"title"];
+    self.titleLabel.text = self.detailDict[@"title"];
     
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = self.detailDict[@"poster_path"];
     NSString *completePosterURLString = [baseURLString stringByAppendingString:posterURLString];
     NSURL *posterURL = [NSURL URLWithString:completePosterURLString];
-    [self.movieImage setImageWithURL:posterURL];
+    [self.imageView setImageWithURL:posterURL];
     
-    self.movieDescription.text = self.detailDict[@"overview"];
+    self.descriptionLabel.text = self.detailDict[@"overview"];
     
     
     
