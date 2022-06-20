@@ -27,6 +27,8 @@
     [super viewDidLoad];
     
     [self.activityIndicator startAnimating];
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;

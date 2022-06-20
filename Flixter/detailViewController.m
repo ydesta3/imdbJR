@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *movieImage;
 @property (weak, nonatomic) IBOutlet UILabel *movieDescription;
 @property (weak, nonatomic) IBOutlet UILabel *movieTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *movieBackgroundPoster;
 
 @end
 
@@ -27,6 +28,7 @@
     NSString *completePosterURLString = [baseURLString stringByAppendingString:posterURLString];
     NSURL *posterURL = [NSURL URLWithString:completePosterURLString];
     [self.movieImage setImageWithURL:posterURL];
+    [self.movieBackgroundPoster setImageWithURL: posterURL];
     
     self.movieDescription.text = self.detailDict[@"overview"];
     
