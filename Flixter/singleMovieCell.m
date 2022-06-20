@@ -5,9 +5,9 @@
 //  Created by Yonatan Desta on 6/17/22.
 //
 
-#import "SingleMovieCell.h"
+#import "singleMovieCell.h"
 
-@implementation SingleMovieCell
+@implementation singleMovieCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

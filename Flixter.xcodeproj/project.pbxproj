@@ -18,7 +18,7 @@
 		503B12AB285A47B3008D9060 /* FlixterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503B12AA285A47B3008D9060 /* FlixterUITests.m */; };
 		503B12AD285A47B3008D9060 /* FlixterUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 503B12AC285A47B3008D9060 /* FlixterUITestsLaunchTests.m */; };
 		50E1FF5B285A81C40007CC6D /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1FF5A285A81C40007CC6D /* MovieViewController.m */; };
-		50E1FFA5285C78260007CC6D /* SingleMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1FFA4285C78260007CC6D /* SingleMovieCell.m */; };
+		50E1FFA5285C78260007CC6D /* singleMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1FFA4285C78260007CC6D /* singleMovieCell.m */; };
 		50E1FFAB285CF1300007CC6D /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1FFAA285CF1300007CC6D /* detailViewController.m */; };
 		50E1FFB1285D0BEB0007CC6D /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1FFB0285D0BEB0007CC6D /* MovieCell.m */; };
 		50E1FFB4285D10730007CC6D /* MovieGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E1FFB3285D10730007CC6D /* MovieGridViewController.m */; };
@@ -65,8 +65,8 @@
 		503B12AC285A47B3008D9060 /* FlixterUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlixterUITestsLaunchTests.m; sourceTree = "<group>"; };
 		50E1FF59285A81C40007CC6D /* MovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		50E1FF5A285A81C40007CC6D /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
-		50E1FFA3285C78260007CC6D /* SingleMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleMovieCell.h; sourceTree = "<group>"; };
-		50E1FFA4285C78260007CC6D /* SingleMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleMovieCell.m; sourceTree = "<group>"; };
+		50E1FFA3285C78260007CC6D /* singleMovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = singleMovieCell.h; sourceTree = "<group>"; };
+		50E1FFA4285C78260007CC6D /* singleMovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singleMovieCell.m; sourceTree = "<group>"; };
 		50E1FFA9285CF1300007CC6D /* detailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
 		50E1FFAA285CF1300007CC6D /* detailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
 		50E1FFAF285D0BEB0007CC6D /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
@@ -170,10 +170,10 @@
 				50E1FFB0285D0BEB0007CC6D /* MovieCell.m */,
 				50E1FFB2285D10730007CC6D /* MovieGridViewController.h */,
 				50E1FFB3285D10730007CC6D /* MovieGridViewController.m */,
-				50E1FFA3285C78260007CC6D /* SingleMovieCell.h */,
+				50E1FFA3285C78260007CC6D /* singleMovieCell.h */,
 				50E1FFA9285CF1300007CC6D /* detailViewController.h */,
 				50E1FFAA285CF1300007CC6D /* detailViewController.m */,
-				50E1FFA4285C78260007CC6D /* SingleMovieCell.m */,
+				50E1FFA4285C78260007CC6D /* singleMovieCell.m */,
 				503B1290285A47B3008D9060 /* Assets.xcassets */,
 				503B1292285A47B3008D9060 /* LaunchScreen.storyboard */,
 				503B1295285A47B3008D9060 /* Info.plist */,
@@ -441,7 +441,7 @@
 			files = (
 				503B128C285A47B1008D9060 /* ViewController.m in Sources */,
 				50E1FF5B285A81C40007CC6D /* MovieViewController.m in Sources */,
-				50E1FFA5285C78260007CC6D /* SingleMovieCell.m in Sources */,
+				50E1FFA5285C78260007CC6D /* singleMovieCell.m in Sources */,
 				50E1FFAB285CF1300007CC6D /* detailViewController.m in Sources */,
 				503B1286285A47B1008D9060 /* AppDelegate.m in Sources */,
 				503B1297285A47B3008D9060 /* main.m in Sources */,

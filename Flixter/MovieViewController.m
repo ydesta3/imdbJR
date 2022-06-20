@@ -102,7 +102,7 @@
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
     // reuses the single template of a arbitrary movie cell with unique identifier
-    SingleMovieCell *movieCell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
+    singleMovieCell *movieCell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
     NSDictionary *movie = self.movieArray[indexPath.row];
     
