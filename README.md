@@ -40,11 +40,8 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/78214344/175867598-5f8129a0-1581-499a-8e52-17c63dfb8c4b.gif)
 
-
-
-GIF created with [Kap](https://getkap.co/).
+![Screen_Recording_2022-06-20_at_8_18_51_PM_AdobeExpress-min](https://user-images.githubusercontent.com/78214344/175868019-707de380-8ced-47eb-b519-f2ff2a97e712.gif)
 
 ## Notes
 
